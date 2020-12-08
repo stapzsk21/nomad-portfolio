@@ -1,0 +1,132 @@
+.posts {
+    .card {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+    }
+    .news {
+        padding: 20px 0 50px;
+    }
+}
+
+.post {
+    padding: 50px 0;
+    // BODY
+    &__date {
+        margin-top: -15px;
+        color: #687492;
+        font-family: $mont;
+    }
+    &__img {
+        width: 100%;
+        margin: 40px 0;
+        box-shadow: 0 5px 5px #C4C4C4;
+    }
+    &__description, &__buttons, &__comments {
+        max-width: 920px;
+    }
+    &__description {
+        font-size: 18px;
+        line-height: 1.6;
+        &--first {
+            margin-bottom: 12px;
+        }
+    }
+    // BUTTONS
+    &__buttons {
+        margin: 40px 0 60px;
+    }
+    &__link {
+        color: #7E9BBD;
+        border: 1px solid #7e9bbda4;
+        font-family: $mont;
+        padding: 10px 200px;
+        transition: all .3s ease-in-out;
+        &:hover {
+            text-decoration: none;
+            background-color: #7e9bbd73;
+        }
+        
+        &--prev {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        &--next {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            padding: 10px 133px;
+        }
+        @media (max-width: 425px) {
+            padding: 10px 45px;
+        }
+    }
+    // COMMENTS
+    &__comments {
+        margin-bottom: 40px;
+    }
+
+    // FORM
+
+    &__form {
+        background-color: #EAEFF2;
+        border-radius: 5px;
+        padding: 25px;
+    }
+}
+
+.comment {
+    border: 1px solid #7e9bbda4;
+    padding: 10px 300px 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-family: $mont;
+    &__img {
+        max-width: 48px;
+        max-height: 48px;
+        margin-right: 20px;
+    }
+    &__info {
+        margin-bottom: 5px;
+    }
+    &__clock {
+        width: 17px;
+        height: 17px;
+        margin-top: -3px;
+    }
+    &__date {
+        color: #7E9BBD;
+    }
+    @media (max-width: 768px) {
+        padding: 10px 20px 10px 15px;
+    }
+}
+
+.form {
+        
+    &__textarea {
+        min-width: 800px;
+        min-height: 140px;
+        border-radius: 5px;
+        border: none;
+        padding: 12px 10px;
+        margin-bottom: 12px;
+        @media (max-width: 768px) {
+            min-width: 521px;
+        }
+        @media (max-width: 425px) {
+            min-width: 247px;
+        }
+        @media (max-width: 375px) {
+            min-width: 207px;
+        }
+    }
+    &__button {
+        border: none;
+        background-color: #000;
+        color: #fff;
+        font-family: $mont;
+        padding: 10px 15px;
+        border-radius: 5px;
+        display: block;
+    }
+}

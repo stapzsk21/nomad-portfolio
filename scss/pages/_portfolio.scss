@@ -1,0 +1,22 @@
+.pagination {
+    padding: 25px 0 20px;
+}
+
+.page {
+    padding: 10px 20px;
+    background-color: #EAEFF2;
+    color: #000;
+    font-family: $mont;
+    margin-right: 12px;
+    &:hover {
+        text-decoration: none;
+        color: #000;
+    }
+    @media (max-width: 425px) {
+        display: none;
+    }
+}
+
+.prev, .next {
+    display: inline-block;
+}

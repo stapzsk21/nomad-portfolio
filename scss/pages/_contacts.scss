@@ -1,0 +1,101 @@
+.contacts {
+    // MYSELF
+    .myself {
+        background-color: #F5F7FA;
+        &__description {
+            margin-bottom: 0;
+        }
+        &__list {
+            padding: 0 0 0 21px;
+        }
+    }
+}
+
+// MYSELF
+
+.myself {
+    &__me {
+        width: 50%;
+        @media (max-width: 425px) {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+    }
+    &__direction {
+        width: 45%;
+        @media (max-width: 425px) {
+            width: 100%;
+        }
+    }
+}
+
+// MYSELF
+
+.info {
+    padding: 40px 0 20px;
+    &__connect {
+        width: 50%;
+        @media (max-width: 425px) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+    &__address {
+        width: 45%;
+        @media (max-width: 425px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    &__address {
+        font-size: 18px;
+    }
+    &__link {
+        color: #1647ED;
+        text-decoration: none;
+        font-weight: 400;
+        &:hover {
+            color: #1647ED;
+        }
+    }
+}
+
+
+.form {
+    font-family: $mont;
+    &__input, &__comments {
+        border-radius: 5px;
+        border: 1px solid #000;
+    }
+    &__input {
+        margin-bottom: 15px;
+        padding: 5px 7px;
+    }
+    &__comments {
+        min-height: 140px;
+        max-height: 140px;
+        padding: 7px;
+    }
+    &__file {
+        background-color: #EAEFF2;
+        max-width: 140px;
+        padding: 7px 9px;
+        border: none;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+    &__file--info {
+        line-height: 1.5;
+    }
+    &__label {
+        margin: 10px 0;
+    }
+    &__submit {
+        background-color: #000;
+        max-width: 140px;
+        padding: 10px;
+        border: none;
+        border-radius: 7px;
+        color: #fff;
+    }
+}
